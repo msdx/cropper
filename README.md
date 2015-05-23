@@ -25,11 +25,11 @@ Installation
 **build.gradle**
 
 	repositories {
-		mavenCentral()
+		jcenter()
 	}
 
 	dependencies {
-	  compile 'com.edmodo:cropper:1.0.1'
+	  compile 'com.githang:com.edmodo.cropper:1.0.2'
 	}
 
 License

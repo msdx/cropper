@@ -1,4 +1,13 @@
-apply plugin: 'android-library'
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+    }
+}
+
+apply plugin: 'com.android.library'
 //apply plugin: 'maven'
 //apply plugin: 'signing'
 
@@ -84,3 +93,4 @@ repositories {
 //        }
 //    }
 //}
+apply from:'bintray.gradle'
